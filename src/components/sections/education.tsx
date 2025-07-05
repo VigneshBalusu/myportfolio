@@ -28,12 +28,15 @@ export function Education() {
   return (
     <Section id="education" title="Education">
       <div className="relative">
-        <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-border -translate-x-1/2 hidden md:block" />
+        <div className="absolute top-0 left-6 w-0.5 h-full bg-border -translate-x-1/2 md:left-1/2" />
         <div className="space-y-12">
           {educationHistory.map((edu, index) => (
             <AnimatedSection key={index} delay={index * 100}>
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'} ${index % 2 !== 0 ? 'md:order-last' : ''}`}>
+              <div className="relative flex items-start md:grid md:grid-cols-2 md:gap-x-12">
+                <div className="absolute top-1 left-6 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center -translate-x-1/2 md:left-1/2">
+                  <GraduationCap className="h-6 w-6" />
+                </div>
+                <div className={`pl-20 md:pl-0 ${index % 2 === 0 ? 'md:col-start-1 md:text-right' : 'md:col-start-2'}`}>
                   <Card className="w-full bg-card hover:shadow-lg transition-shadow">
                     <CardHeader>
                       <CardTitle className="font-headline text-xl">{edu.degree}</CardTitle>
@@ -45,10 +48,6 @@ export function Education() {
                     </CardContent>
                   </Card>
                 </div>
-                <div className="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground">
-                  <GraduationCap className="h-6 w-6" />
-                </div>
-                <div className="flex-1 hidden md:block" />
               </div>
             </AnimatedSection>
           ))}

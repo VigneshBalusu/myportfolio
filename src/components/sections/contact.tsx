@@ -5,13 +5,13 @@ import { Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 const contactDetails = [
   {
     icon: <Mail className="h-6 w-6 text-primary" />,
-    text: 'balusuvignesh@example.com',
-    href: 'mailto:balusuvignesh@example.com',
+    text: 'vigneshbalusuu@gmail.com',
+    href: 'mailto:vigneshbalusuu@gmail.com',
   },
   {
     icon: <Phone className="h-6 w-6 text-primary" />,
-    text: '+91 12345 67890',
-    href: 'tel:+911234567890',
+    text: '+91 9059379789',
+    href: 'tel:+919059379789',
   },
   {
     icon: <MapPin className="h-6 w-6 text-primary" />,
@@ -23,12 +23,12 @@ const contactDetails = [
 const socialLinks = [
   {
     icon: <Github className="h-6 w-6" />,
-    href: 'https://github.com',
+    href: 'https://github.com/VigneshBalusu',
     label: 'GitHub',
   },
   {
     icon: <Linkedin className="h-6 w-6" />,
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/in/balusu-vignesh-905828258/',
     label: 'LinkedIn',
   },
 ];

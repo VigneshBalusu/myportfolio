@@ -39,8 +39,18 @@ const projects = [
     description: 'A smart shopping budget calculator that prioritizes items to help you manage your spending effectively.',
     image: 'https://placehold.co/600x400.png',
     tags: ['Budgeting', 'React', 'JavaScript'],
+    liveLink: null,
     sourceLink: 'https://github.com/RaviKiran-2005/Rupee-Relief',
     aiHint: 'shopping list',
+  },
+  {
+    title: 'Sales Prediction Model',
+    description: 'A model to predict sales using historical data and machine learning techniques.',
+    image: 'https://placehold.co/600x400.png',
+    tags: ['Machine Learning', 'Python', 'Pandas'],
+    liveLink: null,
+    sourceLink: 'https://github.com/VigneshBalusu',
+    aiHint: 'sales chart',
   },
 ];
 

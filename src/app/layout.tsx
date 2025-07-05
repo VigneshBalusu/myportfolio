@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from '@/lib/utils';
+import { FloatingNav } from '@/components/floating-nav';
 
 export const metadata: Metadata = {
   title: 'Vignesh Portfolio',
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={cn("font-body antialiased")}>
         {children}
         <Toaster />
+        <FloatingNav />
       </body>
     </html>
   );
