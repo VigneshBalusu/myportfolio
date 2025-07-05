@@ -3,35 +3,44 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { AnimatedSection } from '../animated-section';
+import { Button } from '@/components/ui/button';
+import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'NLP Chatbot Website',
+    title: 'Aurora Intel',
     description: 'A responsive chatbot built with Natural Language Processing to understand and respond to user queries in real-time.',
     image: 'https://placehold.co/600x400.png',
     tags: ['NLP', 'Python', 'React'],
+    liveLink: 'https://auroraintel.netlify.app',
+    sourceLink: 'https://github.com/VigneshBalusu/AURORA-INTEL',
     aiHint: 'chatbot conversation',
   },
   {
-    title: 'Weather Forecast Website',
+    title: 'WeatherPeeks',
     description: 'A web application that provides current weather and forecasts by integrating with third-party weather APIs.',
     image: 'https://placehold.co/600x400.png',
     tags: ['API', 'JavaScript', 'CSS'],
+    liveLink: 'https://weatherpeeks.netlify.app',
+    sourceLink: 'https://github.com/VigneshBalusu/weather-web',
     aiHint: 'weather map',
   },
   {
-    title: 'Sales Prediction Model',
-    description: 'A regression model developed to predict future sales based on historical data, helping in business decision-making.',
+    title: 'Pattern Sense',
+    description: 'A machine learning application for detecting and identifying patterns in data.',
     image: 'https://placehold.co/600x400.png',
-    tags: ['Machine Learning', 'Regression', 'Data Analysis'],
-    aiHint: 'business chart',
+    tags: ['Machine Learning', 'Python', 'Data Analysis'],
+    liveLink: 'https://pattern-sense-1qe4.onrender.com/',
+    sourceLink: 'https://github.com/VigneshBalusu/Pattern-Sense',
+    aiHint: 'data pattern',
   },
   {
-    title: 'Second-Hand Marketplace',
-    description: 'A full-stack web application for buying and selling used goods, featuring user authentication and product listings.',
+    title: 'Rupee Relief',
+    description: 'A smart shopping budget calculator that prioritizes items to help you manage your spending effectively.',
     image: 'https://placehold.co/600x400.png',
-    tags: ['Full-Stack', 'MongoDB', 'Express', 'React', 'Node.js'],
-    aiHint: 'online shopping',
+    tags: ['Budgeting', 'React', 'JavaScript'],
+    sourceLink: 'https://github.com/RaviKiran-2005/Rupee-Relief',
+    aiHint: 'shopping list',
   },
 ];
 
@@ -60,6 +69,24 @@ export function Projects() {
                   {project.tags.map(tag => (
                     <Badge key={tag} variant="secondary">{tag}</Badge>
                   ))}
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {project.liveLink && (
+                    <Button asChild variant="outline" size="sm">
+                      <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
+                  {project.sourceLink && (
+                    <Button asChild variant="outline" size="sm">
+                      <a href={project.sourceLink} target="_blank" rel="noopener noreferrer">
+                        <Github />
+                        Source Code
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
