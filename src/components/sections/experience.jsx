@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import { Section } from '@/components/ui/section';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { Briefcase } from 'lucide-react';
 import { AnimatedSection } from '../animated-section';
 
@@ -11,13 +14,15 @@ const experienceData = [
     period: 'Summer 2024',
     description:
       'Developed a cricket score prediction model using machine learning algorithms. Gained experience in data preprocessing, feature engineering, and model deployment.',
+    certificateLink: 'https://drive.google.com/file/d/1sdPGzWOULicA2PPukR_AK3dLoChTZY19/view?usp=drive_link',
   },
   {
     role: 'Micro-Intern',
     company: 'Tech Shiksha',
-    period: 'Winter 2023',
+    period: 'Spring 2024  ',
     description:
       'Worked on projects involving Natural Language Processing (NLP) and Document Intelligence. Extracted insights from unstructured text data using various NLP techniques.',
+    certificateLink: 'https://drive.google.com/file/d/1HV-RFmEgKOcNK385lqEJmNMFrVhJI7eo/view?usp=drive_link',
   },
 ];
 
@@ -51,6 +56,24 @@ export function Experience() {
                     <CardContent>
                       <p className="text-sm font-medium text-primary mb-2">{exp.period}</p>
                       <p className="text-muted-foreground">{exp.description}</p>
+                      {exp.certificateLink && (
+                        <div className="mt-4">
+                          <Button
+                            asChild
+                            variant="outline"
+                            size="sm"
+                            aria-label={`View certificate for ${exp.role} at ${exp.company}`}
+                          >
+                            <a
+                              href={exp.certificateLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              View Certificate
+                            </a>
+                          </Button>
+                        </div>
+                      )}
                     </CardContent>
                   </Card>
                 </div>
