@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/headerlogo.png" type="image/png" />
       </head>
       <body className={cn("font-body antialiased")}>
         {children}
