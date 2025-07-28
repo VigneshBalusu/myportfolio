@@ -27,7 +27,7 @@ const experienceData = [
   {
     role: 'Intern',
     company: 'APSCHE Smart Bridge',
-    period: 'Summer 2024  ',
+    period: 'Summer 2025  ',
     description:
       'Developed a Deeplearning based Fabric Detection, and developed new model using keras',
     certificateLink: 'https://drive.google.com/file/d/1-mpQsdubR5fhUMLvlui-Npqt1jeBV2hv/view?usp=drive_link',
@@ -35,7 +35,7 @@ const experienceData = [
    {
     role: 'Intern',
     company: 'Black Bucks',
-    period: 'Summer 2024  ',
+    period: 'Summer 2025  ',
     description:
       'Developed data Organzing techniques and found data features.',
     certificateLink: 'https://drive.google.com/file/d/1Ofdl3tn5zIPKfXm4XZSGhlNhTHdd1UA_/view?usp=drive_link',
