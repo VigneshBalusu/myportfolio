@@ -24,6 +24,22 @@ const experienceData = [
       'Worked on projects involving Natural Language Processing (NLP) and Document Intelligence. Extracted insights from unstructured text data using various NLP techniques.',
     certificateLink: 'https://drive.google.com/file/d/1HV-RFmEgKOcNK385lqEJmNMFrVhJI7eo/view?usp=drive_link',
   },
+  {
+    role: 'Intern',
+    company: 'APSCHE Smart Bridge',
+    period: 'Summer 2024  ',
+    description:
+      'Developed a Deeplearning based Fabric Detection, and developed new model using keras',
+    certificateLink: 'https://drive.google.com/file/d/1-mpQsdubR5fhUMLvlui-Npqt1jeBV2hv/view?usp=drive_link',
+  },
+   {
+    role: 'Intern',
+    company: 'Black Bucks',
+    period: 'Summer 2024  ',
+    description:
+      'Developed data Organzing techniques and found data features.',
+    certificateLink: 'https://drive.google.com/file/d/1Ofdl3tn5zIPKfXm4XZSGhlNhTHdd1UA_/view?usp=drive_link',
+  }
 ];
 
 export function Experience() {
