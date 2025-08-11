@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 
 const socialLinks = [
   {
-    href: 'https://drive.google.com/file/d/16CjsSDogkWWqBVT4b_gYYbtoFIcPqPEB/view?usp=sharing',
+    href: 'https://drive.google.com/file/d/1avEEHfCW_ftYdTm_d2EOj2oA5kpFc6me/view?usp=drive_link',
     icon: <Download className="h-6 w-6" />,
     label: 'Download Resume',
   },
